@@ -13,7 +13,6 @@
 
     h1, h2 {
       text-transform: uppercase;
-      font-family: "Oswald", sans-serif;
       font-optical-sizing: auto;
       font-weight: 700;
       font-style: normal;
@@ -34,10 +33,18 @@
     .hero img {
       max-width: 360px;
       border-radius: 3px;
+
+      @media (max-width: 768px) {
+        max-width: 275px;
+      }
     }
     .sponsors img {
       max-width: 200px;
       margin: 10px;
+
+      @media (max-width: 768px) {
+        max-width: 160px;
+      }
     }
     .thank-you {
       font-family: 'Pacifico', cursive;
@@ -106,14 +113,14 @@
       <h2 class="text-center mb-4 white">Latest News</h2>
       <h3>2024 Celina Fall Classic Champions!</h3>
       <p>The Strikers earned 1st Place in the <strong>2024 Celina Fall Classic Tournament</strong>!</p>
-      <p><a href="#">View photos from the tournament</a></p>
+      <!-- <p><a href="#">View photos from the tournament</a></p> -->
     </div>
   </section>
 
   <!-- Sponsors Section -->
   <section class="sponsors py-5 bg-light text-center">
     <div class="container">
-      <h2 class="mb-4">Our Sponsors</h2>
+      <h2 class="mb-4">2025 Team Sponsors</h2>
       <div class="row justify-content-center">
         <div class="col-6 col-md-3"><img src="img/LeugersInsLogo-Color.png" alt="Sponsor 1" /></div>
         <div class="col-6 col-md-3"><img src="https://placehold.co/100x50?text=Logo+2" alt="Sponsor 2" /></div>
